@@ -9,5 +9,10 @@ $file = simplexml_load_string($xml);
 if ($file -> suggestion -> getName() == NULL)
 	echo "True";
 else
-	echo "False";
+	// echo $file -> suggestion[0];
+	$list = "";
+	foreach ($file -> suggestion as $suggestions) {
+		$list = $list.$suggestions." ";
+	}
+	echo $list;
 ?>
