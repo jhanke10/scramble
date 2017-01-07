@@ -16,7 +16,7 @@ def unscramble(files):
 	return words
 		
 #Solve puzzle by finding the correct word in dictionary
-def sovleScramble(words, key = 'e6982be6-806d-4781-8390-896ff4406dfb'):
+def sovleScramble(words, key = ''):
 	solved = {}
 	for word in words:
 		seen = set()
